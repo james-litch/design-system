@@ -1,0 +1,28 @@
+export { default as IconAlertCircle } from "./alert_circle.svg?react";
+export { default as IconArrowRight } from "./arrow_right.svg?react";
+export { default as IconCheck } from "./check.svg?react";
+export { default as IconChevronDown } from "./chevron_down.svg?react";
+export { default as IconClose } from "./close.svg?react";
+export { default as IconDot } from "./dot.svg?react";
+export { default as IconFilter } from "./filter.svg?react";
+export { default as IconUK } from "./flags/uk.svg?react";
+export { default as IconUSA } from "./flags/usa.svg?react";
+export { default as IconHeartHandshake } from "./heart_handshake.svg?react";
+export { default as IconInfoCircle } from "./info_circle.svg?react";
+export { default as Logo } from "./logo.svg?react";
+export { default as IconMenu } from "./menu.svg?react";
+export { default as IconMoneySearch } from "./money_search.svg?react";
+export { default as IconAmericaExpress } from "./payment/american_express.svg?react";
+export { default as IconMasterCard } from "./payment/master_card.svg?react";
+export { default as IconPayPal } from "./payment/paypal.svg?react";
+export { default as IconVisa } from "./payment/visa.svg?react";
+export { default as IconPin } from "./pin.svg?react";
+export { default as IconRapid } from "./rapid.svg?react";
+export { default as IconSearch } from "./search.svg?react";
+export { default as IconFacebook } from "./socials/facebook.svg?react";
+export { default as IconInstagram } from "./socials/instagram.svg?react";
+export { default as IconLinkedIn } from "./socials/linkedIn.svg?react";
+export { default as IconTwitter } from "./socials/twitter.svg?react";
+export { default as IconYoutube } from "./socials/youtube.svg?react";
+
+export { IconStar } from "./IconStar";

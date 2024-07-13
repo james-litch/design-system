@@ -12,6 +12,9 @@
       "design-system": [
         "lib/index.ts"
       ],
+      "design-system/icons": [
+        "lib/icons/icons.ts"
+      ],
       "design-system*": [
         "lib*"
       ],
