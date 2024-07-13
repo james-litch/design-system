@@ -1,0 +1,45 @@
+.input {
+  --input-border: var(--color-neutral-300);
+  --input-border-error: var(--color-danger-600);
+  --input-bg: var(--color-white);
+  --input-ring: var(--color-pink-300);
+
+  --input-text-placeholder: var(--color-neutral-500);
+
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  padding: 0.5em;
+  display: block;
+  border-radius: var(--radius-lg);
+  width: 100%;
+
+  &:focus-visible {
+    outline: solid 2px var(--input-ring);
+    outline-offset: 2px;
+  }
+
+  &:placeholder {
+    color: var(--input-text-placeholder);
+  }
+
+
+  &:disabled {
+    opacity: 75%;
+  }
+}
+
+.input:invalid,
+.input[aria-invalid] {
+  border-color: var(--input-border-error);
+}
+
+select.input {
+  appearance: none;
+  background: var(--icon-chevron) no-repeat bottom 50% right 0.375em;
+  background-size: 1.25em;
+  padding-right: 1.5em;
+}
+
+textarea.input {
+  padding: 0.5em;
+}

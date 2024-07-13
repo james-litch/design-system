@@ -1,0 +1,45 @@
+.modal {
+  background-color: var(--color-white);
+  inset: var(--spacing-sm);
+  margin: auto;
+  width: min(100%, 30rem);
+  border-radius: var(--radius-lg);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-neutral-300);
+
+  opacity: 0;
+  transform: translateY(100%);
+
+  transition: all 0.7s allow-discrete;
+}
+
+.modal:popover-open,
+.modal[open] {
+  opacity: 1;
+  transform: translateY(0);
+
+  @starting-style {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+.modal::backdrop {
+  background-color: transparent;
+
+  transition: all 0.7s allow-discrete;
+}
+
+.modal:popover-open::backdrop,
+.modal[open]::backdrop {
+  background-color: color-mix(
+    in srgb,
+    var(--color-neutral-900) 25%,
+    transparent
+  );
+
+  @starting-style {
+    background-color: transparent;
+  }
+}

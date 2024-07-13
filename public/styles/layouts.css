@@ -1,0 +1,89 @@
+/* Container  */
+.content-grid {
+	--gap: var(--content-gutter, clamp(1.5rem, 7vw, 3rem));
+	--full: minmax(var(--gap), 1fr);
+	--content: min(var(--content-max-width), 100% - var(--gap) * 2);
+	display: grid;
+	grid-template-columns:
+		[full-width-start] var(--full) [content-start] var(--content) [content-end] var(--full)
+		[full-width-end];
+}
+
+.content-grid > *,
+.breakout > * {
+	grid-column: content;
+}
+
+.content-grid > .breakout {
+	grid-column: full-width;
+	display: grid;
+	grid-template-columns: inherit;
+}
+
+.breakout-l {
+	grid-column: full-width-start / content-end;
+}
+
+.breakout-r {
+	grid-column: content-start / full-width-end;
+}
+
+/* Switcher */
+.switcher {
+	--threshold: calc(var(--content-max-width) - (2 * var(--content-gutter, 0)));
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.switcher > * {
+	flex-grow: 1;
+	flex-basis: calc((var(--threshold) - 100%) * 999);
+}
+
+/* Sidebar */
+.sidebar-l,
+.sidebar-r {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sidebar-r > :last-child,
+.sidebar-l > :first-child {
+	/* Desiged to be used with flex basis for layouts */
+	flex-grow: 1;
+}
+
+.sidebar-r > :first-child,
+.sidebar-l > :last-child {
+	min-width: var(--min-content-width, 50%);
+	flex-basis: 0;
+	flex-grow: 999;
+}
+
+/* Auto grid */
+.auto-fit-grid {
+	--min-item-size: 250px;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(var(--min-item-size), 100%), 1fr));
+}
+
+.auto-fill-grid {
+	--min-item-size: 250px;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(var(--min-item-size), 100%), 1fr));
+
+}
+
+.scroller {
+	--item-width: 0;
+
+	display: flex;
+	align-items: stretch;
+	overflow-x: auto;
+
+	& > * {
+		flex: 0 0 var(--item-width);
+	}
+}

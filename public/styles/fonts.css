@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Maison Neue";
+    src: url("fonts/maison-neue/maison-neue-book.woff2") format("woff2"),
+        url("fonts/maison-neue/maison-neue-book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Maison Neue";
+    src: url("fonts/maison-neue/maison-neue-medium.woff2") format("woff2"),
+        url("fonts/maison-neue/maison-neue-medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Maison Neue";
+    src: url("fonts/maison-neue/maison-neue-demi.woff2") format("woff2"),
+        url("fonts/maison-neue/maison-neue-demi.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Maison Neue";
+    src: url("fonts/maison-neue/maison-neue-bold.woff2") format("woff2"),
+        url("fonts/maison-neue/maison-neue-bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Maison Neue Extended";
+    src: url("fonts/maison-neue-extended/maison-neue-extended-book.woff2") format("woff2"),
+        url("fonts/maison-neue-extended/maison-neue-extended-book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Maison Neue Extended";
+    src: url("fonts/maison-neue-extended/maison-neue-extended-medium.woff2") format("woff2"),
+        url("fonts/maison-neue-extended/maison-neue-extended-medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Maison Neue Extended";
+    src: url("fonts/maison-neue-extended/maison-neue-extended-demi.woff2") format("woff2"),
+        url("fonts/maison-neue-extended/maison-neue-extended-demi.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Maison Neue Extended";
+    src: url("fonts/maison-neue-extended/maison-neue-extended-bold.woff2") format("woff2"),
+        url("fonts/maison-neue-extended/maison-neue-extended-bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}

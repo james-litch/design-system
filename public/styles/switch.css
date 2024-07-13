@@ -1,0 +1,49 @@
+.switch {
+	--switch-bg: var(--color-neutral-200);
+	--switch-bg-checked: var(--color-pink-200);
+	--switch-toggle-bg: var(--color-white);
+	--switch-toggle-width: 1em;
+    --switch-focus-ring: var(--color-pink-400);
+
+
+	appearance: none;
+	flex-shrink: 0;
+	position: relative;
+	cursor: pointer;
+	background-color: var(--switch-bg);
+	width: 3em;
+	height: 1.5em;
+	border-radius: var(--radius-full);
+	transition: all 0.2s ease-in-out;
+	border: none;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: var(--switch-toggle-width);
+		height: var(--switch-toggle-width);
+		inset: 0 0.25em;
+		background-color: var(--switch-toggle-bg);
+		margin: auto 0;
+		border-radius: 50%;
+		transform: translateX(0);
+		transition: all 0.2s ease-in-out;
+	}
+
+	&:checked {
+		background-color: var(--switch-bg-checked);
+
+		&:before {
+			transform: translateX(calc(100% + var(--switch-toggle-width) / 2));
+		}
+	}
+
+    &:focus-visible {
+        outline-color: var(--switch-focus-ring) ;
+    }
+
+	&:disabled {
+		cursor: default;
+		opacity: 75%;
+	}
+}
