@@ -1,0 +1,78 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Accessibility" />
+
+# Accessibility
+
+It is important to make sure that your website is accessible to all users.
+This includes users with disabilities and users with slow internet connections.
+
+
+## Semantic HTML
+
+Use semantic HTML elements where possible. Semantic HTML elements include lists, appropriate headings form labels.
+This will help screen readers and other assistive technologies understand the content of your website. 
+For more information on semantic HTML, check out [MDN - HTML](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML).
+
+## ARIA attributes
+
+Use ARIA attributes where semantic HTML is not available.
+ARIA attributes can be used to add additional information to elements that are not available in the HTML spec e.g breadcrumbs and dropdowns.
+For more information on ARIA attributes, check out [MDN - ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) and [WAI-ARIA patterns](https://www.w3.org/WAI/ARIA/apg/patterns/).
+
+
+## Keyboard navigation
+
+When creating custom components, make sure that they are accessible via the keyboard.
+A handy site to check how various components should be navigated is [WAI-ARIA patterns](https://www.w3.org/WAI/ARIA/apg/patterns/).
+
+## Alt text on images
+
+Use alt text on images to describe the content of the image for users who can't see the image.
+The alt text should describe the content of the image and NOT inlude "image of a", "picture of a" etc.
+
+## Screen reader only text
+
+Use screen reader only text to provide additional information to screen readers. This can be done using the `sr-only` class.
+
+```html
+<!-- some svg that isnt accessable -->
+<svg aria-hidden >...</svg>
+<span class="sr-only">This text wont be visible</span>
+```
+
+## Form labels 
+
+Use form labels to describe the purpose of every form element.
+Form labels should be associated with the form element using the `for` attribute or by wrapping the form element in a label element.
+For more information on form labels, check out [MDN - Label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label).
+
+## Headings
+
+Use appropriate heading levels to describe the content of the page. There should be only 1 h1 element on the page and the rest should be h2-h6.
+For more information on headings, check out [MDN - Headings](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements).
+
+## Navigation regions
+
+Use navigation regions to describe the navigation of the page. This can be done using the `nav` element.
+For more information on navigation regions, check out [MDN - nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav).
+
+## Progressive enhancement
+
+Use progressive enhancement to enhance the user experience of your website. 
+This means that the website should have a minimum level of fuctionality without JavaScript.
+For more information on progressive enhancement, check out [MDN - Progressive enhancement](https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement).
+
+## Forms
+
+Forms are the most accessible way to get user input. Want to update some page filters? Use a form with method="GET".
+For more information on forms, check out [MDN - Forms](https://developer.mozilla.org/en-US/docs/Learn/Forms).
+
+## SearchParams
+
+We can also store state inside the URL using the SearchParams. 
+This allows us to share the state of the page with others, e.g with pagination: 
+```https://scan.com/news?page=2``` or with filters: ```https://scan.com/search?modality=mri&body_part=brain&body_part=bladder&next_day=on```.
+
+For more information on SearchParams, check out [MDN - URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams#examples).
+

@@ -15,9 +15,6 @@
       "design-system/icons": [
         "lib/icons/icons.ts"
       ],
-      "design-system*": [
-        "lib*"
-      ],
     },
     "module": "ESNext",
     "skipLibCheck": true,

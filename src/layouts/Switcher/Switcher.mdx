@@ -1,0 +1,62 @@
+import { Story, Canvas, Controls, Meta } from '@storybook/blocks';
+
+import * as SwitcherStories from './Switcher.stories';
+
+<Meta of={SwitcherStories} />
+
+# Switcher
+
+The switcher layout switches from rows to columns, given a certain breakpoint. This is useful for switching between mobile and desktop layouts without media queries.
+
+
+## Usage 
+
+To use the switcher layout, simply add the `switcher` class to the parent element. CSS variables can be used to override the default values of the layout. For example, to change the `switcher` layout breakpoint, add the following:
+
+```html
+<div class="switcher">
+```
+
+### Optional CSS Vars
+
+<Controls />
+
+
+### Base 
+
+<Canvas of={SwitcherStories.Base}>
+    <Story />
+</Canvas>
+
+
+### Flex Grow
+
+By adding a `grow-` Tailwind token to a child element, that child will 'grow' faster than the other children. This is useful for creating a layout where one child takes up more space than the others.
+
+<Canvas of={SwitcherStories.Grow}>
+    <Story />
+</Canvas>
+
+### Reverse Wrap 
+
+By adding the class `flex-reverse-wrap` to the parent element, the children will wrap in reverse order.
+
+<Canvas of={SwitcherStories.ReverseWrap}>
+    <Story />
+</Canvas>
+
+### Multiple Children
+
+This layout also works great with multiple children.
+
+<Canvas of={SwitcherStories.Multiple}>
+    <Story />
+</Canvas>
+
+### Spacing
+
+By adding `gap-` , `gap-x` or `gap-y` Tailwind tokens to the parent element, you can control the spacing between the children.
+
+<Canvas of={SwitcherStories.Gap}>
+    <Story />
+</Canvas>

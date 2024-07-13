@@ -1,0 +1,46 @@
+import { Story, Canvas, Controls } from '@storybook/blocks';
+
+import * as SwitcherStories from './Switcher/Switcher.stories';
+import * as AutoGridStories from './AutoGrid/AutoGrid.stories';
+import * as SidebarStories from './Sidebar/Sidebar.stories';
+import * as ContentGridStories from './ContentGrid/ContentGrid.stories';
+
+# Layouts
+
+This is a collection of layouts that can be used in your project. These layouts have been taken from [every-layout.dev](https://every-layout.dev/).
+The layouts do not require the use of media queries and are designed to be responsive (try resizing the doc).
+
+
+## The Switcher
+
+The [switcher layout](?path=/docs/layouts-switcher--docs) switches from rows to columns, given a certain breakpoint. This is useful for switching between a mobile and desktop layouts.
+
+<Story of={SwitcherStories.Gap} />
+
+
+## The AutoGrid
+
+The [Auto Grid](?path=/docs/layouts-autogrid--docs) is a layout that auto adjusts columns based on a minimum item size. This is useful for creating a grid layout that adjusts based on the content.
+
+
+<Story of={AutoGridStories.Fit} />
+
+## The Sidebar 
+
+The [Sidebar](?path=/docs/layouts-sidebar--docs) is a layout that has a sidebar and a main content area.
+
+<Story of={SidebarStories.Left} />
+
+## The Content Grid 
+
+The [Content Grid](?path=/docs/layouts-contentgrid--docs) is a layout that has a main content area with gutters either side.
+
+<Story of={ContentGridStories.Breakout} />
+
+
+
+## FAQ 
+
+### Why are these not components?
+
+A class approach is better, as it is more convenient to use it on any element.

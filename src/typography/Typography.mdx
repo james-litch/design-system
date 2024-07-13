@@ -1,0 +1,52 @@
+import { Story, Canvas, Controls } from '@storybook/blocks';
+import * as FluidStories from './Fluid.stories';
+import * as NormalStories from './Normal.stories';
+import * as HeadingStories from './Heading.stories';
+
+# Typography
+
+We have 2 types of typography, fluid and normal. 
+
+## Fluid
+
+Fluid typography is a typography that scales with the viewport width. It is useful for creating responsive designs without the need for media queries.
+To read more about fluid typography, check out [utopia](https://utopia.fyi/type/calculator?c=320,14,1.2,1280,16,1.333,5,2,768&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12).
+
+```html
+<div class='text-fl-0'>foo</div>
+```
+
+<Canvas of={FluidStories.All}>
+    <Story />
+</Canvas>
+
+
+## Normal
+
+Normal typography is a typography that does not scale with the viewport width. It is useful for creating fixed width designs.
+
+```html
+<div class='text-base'>foo</div>
+```
+
+<Canvas of={NormalStories.All}>
+    <Story />
+</Canvas>
+
+
+## Defaults
+
+Default typography styles are applied to all text elements.
+
+### Headings
+
+Heading levels 1-4 are bold(700) with a font family of `Maison Neue Extended`.
+
+<Canvas of={HeadingStories.H1ToH3}>
+    <Story />
+</Canvas>
+
+### Font Size
+
+By default all text has a font size of `--font-size-fl-0` applied.
+

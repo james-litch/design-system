@@ -1,0 +1,56 @@
+import { Story, Canvas, Controls, Meta } from '@storybook/blocks';
+
+import * as SidebarStories from './Sidebar.stories';
+
+<Meta of={SidebarStories} />
+
+# Sidebar
+
+The switcher layout switches from rows to columns, given a certain breakpoint. This is useful for switching between mobile and desktop layouts without media queries.
+
+
+## Usage 
+
+The AutoGrid layout auto adjusts columns based on a minimum item size. This is useful for creating a grid layout that adjusts based on the content.
+
+```html
+<div class="sidebar-l">
+```
+
+### Optional CSS Vars
+
+<Controls />
+
+
+### Left
+
+<Canvas of={SidebarStories.Left}>
+    <Story />
+</Canvas>
+
+
+### Right
+
+<Canvas of={SidebarStories.Right}>
+    <Story />
+</Canvas>
+
+### Reverse Wrap 
+
+By adding the class `flex-reverse-wrap` to the parent element, the children will wrap in reverse order.
+
+<Canvas of={SidebarStories.ReverseWrap}>
+    <Story />
+</Canvas>
+
+
+
+### Spacing
+
+By adding `gap-` , `gap-x` or `gap-y` Tailwind tokens to the parent element, you can control the spacing between the children.
+
+<Canvas of={SidebarStories.Gap}>
+    <Story />
+</Canvas>
+
+**Warning:** When using a gap, you may need to decrease the `--min-content-width` variable.

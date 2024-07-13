@@ -1,0 +1,45 @@
+import { Story, Canvas, Controls, Meta } from '@storybook/blocks';
+
+import * as ContentGrid from './ContentGrid.stories';
+
+<Meta of={ContentGrid} />
+
+# Content Grid
+
+The Content Grid is a layout that sets a main content area with gutters either side.
+
+
+## Usage 
+
+```html
+<div class="content-grid">
+```
+
+### Optional CSS Vars
+
+<Controls />
+
+
+### Base
+
+<Canvas of={ContentGrid.Base}>
+    <Story />
+</Canvas>
+
+
+### Full Breakout
+
+By adding `breakout` to a **direct** child of the content grid, you can make it full width.
+
+<Canvas of={ContentGrid.Breakout}>
+    <Story />
+</Canvas>
+
+
+### Single Side Breakout
+
+By adding `breakout-l` or `breakout-r` to a **direct** child of the content grid, you can make it span the full width on one side.
+
+<Canvas of={ContentGrid.BreakoutLeft}>
+    <Story />
+</Canvas>

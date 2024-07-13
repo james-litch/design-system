@@ -1,0 +1,47 @@
+import { Story, Canvas, Controls, Meta } from '@storybook/blocks';
+
+import * as AutoGridStories from './AutoGrid.stories';
+
+<Meta of={AutoGridStories} />
+
+# Auto Grid
+
+The Auto Grid layout auto adjusts columns based on a minimum item size. This is useful for creating a grid layout that adjusts based on the content.
+
+
+## Usage 
+
+```html
+<div class="auto-fill-grid gap-sm">
+```
+
+### Optional CSS Vars
+
+<Controls />
+
+
+### Auto Fill 
+
+The auto fill grid will repeat repeateate columns of a minimum size or 100% of the parent element (whichever is smaller).
+
+<Canvas of={AutoGridStories.Fill}>
+    <Story />
+</Canvas>
+
+
+### Auto Fit
+
+The auto fit grid will make the columns stretch to fit the remaiing space.
+
+<Canvas of={AutoGridStories.Fit}>
+    <Story />
+</Canvas>
+
+
+### Spacing
+
+By adding `gap-` , `gap-x` or `gap-y` Tailwind tokens to the parent element, you can control the spacing between the children.
+
+<Canvas of={AutoGridStories.Gap}>
+    <Story />
+</Canvas>

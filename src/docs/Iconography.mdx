@@ -1,0 +1,125 @@
+import { IconGallery, IconItem, Meta, Title } from '@storybook/blocks';
+import * as Icons from '../../lib/icons';
+
+<Meta title="Iconography" />
+
+# Iconography
+
+This package contains the icons used across the design system. Its important to use these icons to ensure consistency across the design system.
+
+For React projects, icons can be imported directly from :
+
+```jsx
+import { IconCheck } from '@scandotcom/design-system/icons'
+
+<IconCheck />
+```
+
+For Rails projects icons can be added via the inline_svg gem. To learn more about the inline_svg gem please [click here](https://github.com/jamesmartin/inline_svg)
+
+```erb
+
+<%= inline_svg('check.svg') %>
+
+```
+
+
+
+## Base 
+
+<IconGallery>
+  <IconItem name="alert_circle">
+    <Icons.IconAlertCircle />
+  </IconItem>
+  <IconItem name="arrow_right">
+    <Icons.IconArrowRight />
+  </IconItem>
+  <IconItem name="check">
+    <Icons.IconCheck />
+  </IconItem>
+  <IconItem name="close">
+    <Icons.IconClose />
+  </IconItem>
+  <IconItem name="chevron_down">
+    <Icons.IconChevronDown />
+  </IconItem>
+  <IconItem name="dot">
+    <Icons.IconDot />
+  </IconItem>
+  <IconItem name="filter">
+    <Icons.IconFilter />
+  </IconItem>
+  <IconItem name="heart_handshake">
+    <Icons.IconHeartHandshake />
+  </IconItem>
+  <IconItem name="info_circle">
+    <Icons.IconInfoCircle />
+  </IconItem>
+  <IconItem name="logo">
+    <Icons.Logo />
+  </IconItem>
+  <IconItem name="menu">
+    <Icons.IconMenu />
+  </IconItem>
+  <IconItem name="money_search">
+    <Icons.IconMoneySearch />
+  </IconItem>
+  <IconItem name="pin">
+    <Icons.IconPin />
+  </IconItem>
+  <IconItem name="rapid">
+    <Icons.IconRapid />
+  </IconItem>
+  <IconItem name="search">
+    <Icons.IconSearch />
+  </IconItem>
+  <IconItem name="star (.png)">
+    <Icons.IconStar />
+  </IconItem>
+</IconGallery>
+
+## Social
+<IconGallery>
+  <IconItem name="facebook">
+    <Icons.IconFacebook />
+  </IconItem>
+  <IconItem name="twitter">
+    <Icons.IconTwitter />
+  </IconItem>
+  <IconItem name="instagram">
+    <Icons.IconInstagram />
+  </IconItem>
+  <IconItem name="linkedIn">
+    <Icons.IconLinkedIn />
+  </IconItem>
+  <IconItem name="youtube">
+    <Icons.IconYoutube />
+  </IconItem>
+</IconGallery>
+
+## Payments
+<IconGallery>
+  <IconItem name="american_express">
+    <Icons.IconAmericaExpress />
+  </IconItem>
+  <IconItem name="master_card">
+    <Icons.IconMasterCard />
+  </IconItem>
+  <IconItem name="paypal">
+    <Icons.IconPayPal />
+  </IconItem>
+  <IconItem name="visa">
+    <Icons.IconVisa />
+  </IconItem>
+</IconGallery>
+
+## Flags
+<IconGallery>
+ <IconItem name="uk">
+    <Icons.IconUK />
+  </IconItem>
+  <IconItem name="us">
+    <Icons.IconUSA />
+  </IconItem>
+</IconGallery>
+

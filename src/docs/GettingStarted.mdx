@@ -1,0 +1,68 @@
+import { Meta, Title, Markdown } from '@storybook/blocks';
+
+<Meta title="Getting Started" />
+
+# Getting Started
+
+This is the documentation for the design system. It contains all the information you need to get started.
+
+
+ 
+## Figma
+ 
+[Scan.com Figma](https://www.figma.com/files/team/780605331611258662/all-projects?fuid=1177629003887292479) is a collaborative design and prototyping tool. It's the heart of the design process, allowing designers to work together seamlessly.
+
+**Get Access**: If you're not already part of the Figma project, request access from the project lead or manager.
+ 
+## Design Assets
+ 
+All the essential design assets like logos, icons, and brand guidelines can be found in this project e.g [colors](?path=/docs/color-palette--docs), [Iconography](?path=/docs/iconography--docs) and [typography](?path=/docs/typography--docs).
+
+ 
+## Development Tools
+ 
+Your development environment is critical. Here are some tools and resources to help you set up your workspace:
+
+<Markdown>
+{`
+| Name | Description | Command | Link|
+|------|------|------|------|------|
+| Homebrew | A package manager for macOS. | | [Download](https://brew.sh/) |
+| Visual Studio Code | A highly customizable code editor with a wide range of extensions. | brew install visual-studio-code | [Download](https://code.visualstudio.com/) |
+| NPM | A package manager for JavaScript projects. | brew install npm | [Download](https://www.npmjs.com/) |
+| Tailwindcss Intellisense | A VS Code extension that provides intellisense for tailwindcss classes. | | [Download](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) |
+| Postman | A collaboration platform for API development. | brew install postman | [Download](https://www.postman.com/) |
+`}
+</Markdown>
+
+## Installation
+
+To install the design system, run the following command:
+
+```bash
+npm install @scandotcom/design-system
+```
+
+Install any dependencies that are not already installed.
+
+```bash
+npm install react
+```
+
+## Usage
+
+Within your projects main CSS file import the parts of the design system you wish to include, along with tailwindcss.
+Optionally you can import the entire design system.
+
+```css
+@import 'tailwindcss';
+
+# css layers help to ensure that your project specific styles take precedence over the design system styles.
+@import '@scandotcom/design-system/dist/index.css' layer(base);
+
+# or
+@import '@scandotcom/design-system/dist/button.css';
+....
+@import '@scandotcom/design-system/dist/typography.css';
+```
+

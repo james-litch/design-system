@@ -1,0 +1,135 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="Color Palette" />
+
+# Color Palette
+
+Here are the colors used across the design system.
+
+## Usage 
+
+The colors displayed can be used by applying tailwind style tokens. 
+
+```HTML
+<div class="bg-pink-300"></div>
+```
+
+With tailwind v4 we can use the css color variables like so:
+
+```css
+color: var(--color-black);
+background-color: var(--color-pink-300);
+```
+
+## Colors
+
+<ColorPalette>
+   <ColorItem 
+    title="Pink" 
+    colors={{ 
+        50: '#fff0f4',
+        100: '#fee1e9',
+        200: '#fec2d2',
+        300: '#fea2bb',
+        400: '#fa6b98',
+        500: '#eb3d7a',
+        600: '#d01666',
+    }} /> 
+    <ColorItem 
+        title="Neutral" 
+        colors={{ 
+            50: '#f9fafa',
+            100: '#f5f5f4',
+            200: '#e7e5e4',
+            300: '#d6d3d1',
+            400: '#a8a298',
+            500: '#78716c',
+            600: '#57534e',
+            700: '#44403c',
+            800: '#292524',
+            900: '#1c1917',
+            950: '#0c0a09',
+        }} /> 
+
+   <ColorItem 
+    title="Cream" 
+    colors={{ 
+        50: '#fcfcfa',
+        100: '#f6f6f3',
+        200: '#ecece6',
+        300: '#deded4',
+        400: '#d0d0c3',
+        500: '#b7b7a9',
+        600: '#9e9e8f',
+        700: '#838377',
+        800: '#68685e',
+    }} /> 
+
+    
+  
+   <ColorItem 
+    title="Green" 
+    colors={{ 
+        50: '#baf7eb',
+        100: '#9af4e2',
+        200: '#6eedd6',
+        300: '#44e4c9',
+        400: '#0dc9b6',
+        500: '#00a393',
+        600: '#008a7e',
+        700: '#007069',
+        800: '#004d4a',
+        900: '#003232',
+        950: '#001a1a',
+    }} /> 
+
+
+   <ColorItem 
+    title="Success" 
+    colors={{ 
+        50: '#f1fef9',
+        100: '#d5fbeb',
+        200: '#a9f4d7',
+        300: '#71eac2',
+        400: '#38d6a4',
+        500: '#10b785',
+        600: '#039166',
+        700: '#027351',
+        800: '#055c40',
+        900: '#054834',
+        950: '#01271c'
+    }} /> 
+
+   <ColorItem 
+    title="Danger" 
+    colors={{ 
+        50: '#fef2f2',
+        100: '#fee2e2',
+        200: '#fecaca',
+        300: '#fca5a5',
+        400: '#f87171',
+        500: '#ef4444',
+        600: '#dc2626',
+        700: '#b91c1c',
+        800: '#991b1b',
+        900: '#7f1d1d',
+        950: '#450a0a',
+    }} /> 
+
+   <ColorItem 
+    title="Warning" 
+    colors={{ 
+        50: '#fefce8',
+        100: '#fef9c3',
+        200: '#fef08a',
+        300: '#fdf047',
+        400: '#facc15',
+        500: '#eab308',
+        600: '#ca8a04',
+        700: '#a16207',
+        800: '#854d0e',
+        900: '#713f12',
+        950: '#422006',
+    }} /> 
+    <ColorItem title="" colors={{ white: '#ffffff', black: '#000000' }} />
+</ColorPalette>
