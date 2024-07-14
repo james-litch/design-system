@@ -4,7 +4,7 @@ export default create({
   base: "light",
   brandTitle: "Scan.com",
   brandUrl: "https://scan.com",
-  brandImage: "../public/icons/logo.svg",
+  brandImage: "/icons/logo.svg",
   brandTarget: "_self",
   colorSecondary: "#F98A9C",
 });
