@@ -146,8 +146,8 @@
   --content-gutter: clamp(1.5rem, 7vw, 3rem);
 
   /* Icons */
-  --icon-chevron: url("./lib/icons/chevron_down.svg");
-  --icon-check: url("./lib/icons/check.svg");
+  --icon-chevron: url("/icons/chevron_down.svg");
+  --icon-check: url("/icons/check.svg");
 }
 
 @layer base {
