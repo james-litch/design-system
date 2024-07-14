@@ -38,7 +38,7 @@ function ExampleLayout({
 }: Props & { childStyles?: string }) {
   const style = { ...styles } as React.CSSProperties;
   return (
-    <div className="container" style={style}>
+    <div className="content-grid" style={style}>
       <section className={childStyles}>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
