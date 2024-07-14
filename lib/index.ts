@@ -7,3 +7,5 @@ export { Radio } from "./components/Radio";
 export { Select } from "./components/Select";
 export { Switch } from "./components/Switch";
 export { TextArea } from "./components/TextArea";
+
+export { classnames } from "./utils/classnames";
