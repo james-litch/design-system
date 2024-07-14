@@ -1,7 +1,7 @@
 import { Button } from "design-system";
 import { IconCheck } from "design-system/icons";
 
-function App() {
+function TestApp() {
   return (
     <>
       <main className="content-grid py-lg">
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default TestApp;
