@@ -21,7 +21,7 @@ export default defineConfig({
     lib: {
       entry: [
         resolve(__dirname, "lib/index.ts"),
-        resolve(__dirname, "lib/icons/icons.ts"),
+        resolve(__dirname, "lib/icons.ts"),
       ],
       name: "design-system",
       fileName: (format, name) => {
