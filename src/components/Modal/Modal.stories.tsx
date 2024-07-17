@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button, Modal } from "design-system";
-import { IconClose } from "design-system/icons";
+import { Button, Modal } from "@scandotcom/design-system";
+import { IconClose } from "@scandotcom/design-system/icons";
 import { createRef } from "react";
 
 type Story = StoryObj<typeof Modal>;

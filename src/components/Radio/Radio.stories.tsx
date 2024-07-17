@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Radio, classnames } from "design-system";
+import { Radio, classnames } from "@scandotcom/design-system";
 
 type Story = StoryObj<typeof Radio>;
 const meta: Meta<typeof Radio> = {

@@ -9,10 +9,10 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "design-system": [
+      "@scandotcom/design-system": [
         "lib/index.ts"
       ],
-      "design-system/icons": [
+      "@scandotcom/design-system/icons": [
         "lib/icons/icons.ts"
       ],
     },

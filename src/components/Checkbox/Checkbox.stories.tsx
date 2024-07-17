@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Checkbox } from "design-system";
+import { Checkbox } from "@scandotcom/design-system";
 
 type Story = StoryObj<typeof Checkbox>;
 const meta: Meta<typeof Checkbox> = {

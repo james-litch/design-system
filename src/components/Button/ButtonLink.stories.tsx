@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { ButtonLink } from "design-system";
+import { ButtonLink } from "@scandotcom/design-system";
 
 const meta: Meta<typeof ButtonLink> = {
   component: ButtonLink,

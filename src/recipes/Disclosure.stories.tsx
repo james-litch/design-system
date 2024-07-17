@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Checkbox, Disclosure } from "design-system";
-import { IconUK, IconUSA } from "design-system/icons";
+import { Checkbox, Disclosure } from "@scandotcom/design-system";
+import { IconUK, IconUSA } from "@scandotcom/design-system/icons";
 
 type Props = {
   size: string;

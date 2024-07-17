@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Select } from "design-system";
+import { Select } from "@scandotcom/design-system";
 
 type Story = StoryObj<typeof Select>;
 const meta: Meta<typeof Select> = {

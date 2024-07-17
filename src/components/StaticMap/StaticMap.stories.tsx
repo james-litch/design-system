@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { StaticMap } from "design-system";
+import { StaticMap } from "@scandotcom/design-system";
 
 type Story = StoryObj<typeof StaticMap>;
 const meta: Meta<typeof StaticMap> = {

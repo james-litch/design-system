@@ -1,5 +1,5 @@
 {
-  "name": "design-system",
+  "name": "@scandotcom/design-system",
   "version": "0.0.2",
   "type": "module",
   "files": [

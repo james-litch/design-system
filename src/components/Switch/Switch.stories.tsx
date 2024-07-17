@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Switch } from "design-system";
+import { Switch } from "@scandotcom/design-system";
 
 type Story = StoryObj<typeof Switch>;
 const meta: Meta<typeof Switch> = {

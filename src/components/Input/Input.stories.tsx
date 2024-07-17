@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Input } from "design-system";
+import { Input } from "@scandotcom/design-system";
 
 type Story = StoryObj<typeof Input>;
 const meta: Meta<typeof Input> = {
