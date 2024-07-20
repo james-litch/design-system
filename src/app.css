@@ -19,10 +19,17 @@
   --color-white: #ffffff;
   --color-black: #000000;
 
-  --color-green-100: #e5eeee;
-  --color-green-500: #005a55;
-  --color-green-800: #003232;
-  --color-green-900: #002323;
+  --color-green-50: #baf7eb;
+  --color-green-100: #9af4e2;
+  --color-green-200: #6eedd6;
+  --color-green-300: #44e4c9;
+  --color-green-400: #0dc9b6;
+  --color-green-500: #00a393;
+  --color-green-600: #008a7e;
+  --color-green-700: #007069;
+  --color-green-800: #004d4a;
+  --color-green-900: #003232;
+  --color-green-950: #001a1a;
 
   --color-cream-50: #fcfcfa;
   --color-cream-100: #f6f6f3;
@@ -46,7 +53,7 @@
   --color-neutral-100: #f5f5f4;
   --color-neutral-200: #e7e5e4;
   --color-neutral-300: #d6d3d1;
-  --color-neutral-400: #a8a29e;
+  --color-neutral-400: #a8a298;
   --color-neutral-500: #78716c;
   --color-neutral-600: #57534e;
   --color-neutral-700: #44403c;
@@ -54,17 +61,41 @@
   --color-neutral-900: #1c1917;
   --color-neutral-950: #0c0a09;
 
-  --color-success-50: #f0fdf4;
-  --color-success-600: #16a34a;
-  --color-success-950: #052e16;
+  --color-success-50: #f1fef9;
+  --color-success-100: #d5fbeb;
+  --color-success-200: #a9f4d7;
+  --color-success-300: #71eac2;
+  --color-success-400: #38d6a4;
+  --color-success-500: #10b785;
+  --color-success-600: #039166;
+  --color-success-700: #027351;
+  --color-success-800: #055c40;
+  --color-success-900: #054834;
+  --color-success-950: #01271c;
 
   --color-danger-50: #fef2f2;
+  --color-danger-100: #fee2e2;
+  --color-danger-200: #fecaca;
+  --color-danger-300: #fca5a5;
+  --color-danger-400: #f87171;
+  --color-danger-500: #ef4444;
   --color-danger-600: #dc2626;
+  --color-danger-700: #b91c1c;
+  --color-danger-800: #991b1b;
+  --color-danger-900: #7f1d1d;
   --color-danger-950: #450a0a;
 
   --color-warning-50: #fefce8;
+  --color-warning-100: #fef9c3;
+  --color-warning-200: #fef08a;
+  --color-warning-300: #fdf047;
   --color-warning-400: #facc15;
+  --color-warning-500: #eab308;
+  --color-warning-600: #ca8a04;
+  --color-warning-700: #a16207;
+  --color-warning-800: #854d0e;
   --color-warning-900: #713f12;
+  --color-warning-950: #422006;
 
   /* Radii */
   --radius: 0.25rem;
