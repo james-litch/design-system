@@ -1,5 +1,5 @@
 @theme {
-    /* Defaults */
+  /* Defaults */
   --default-font-family: var(--font-family-base);
 
   /* Breakpoints */
@@ -208,21 +208,5 @@
 
   a:not([class]):hover {
     text-decoration: underline;
-  }
-
-  a.card-link {
-    &:hover {
-      text-decoration: underline;
-    }
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      inset: 0;
-    }
-  }
-
-  .hide-scroll {
-    scrollbar-width: none;
   }
 }
