@@ -9,7 +9,7 @@ npm i @scandotcom/design-system
 ### Styles 
 
 ```css
-@import 'node_modules/@scandotcom/design_system/dist/styles/index.css
+@import 'node_modules/@scandotcom/design_system/styles/index.css
 ```
 
 ### Fonts and Icons
@@ -19,13 +19,6 @@ To access the fonts and icons add them to your projects assets path. In order fo
 ## Testing changes
 
 Please test your changes locally before publishing. 
-
-### TestApp.tsx
-
-To test changes locally you use the TestApp.tsx file. This can be run by doing :
-```zsh
-npm run dev
-```
 
 ### Linking the package
 
