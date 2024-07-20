@@ -196,6 +196,10 @@
     font-style: unset;
   }
 
+  label {
+    display: block;
+  }
+
   fieldset {
     legend {
       float: left;

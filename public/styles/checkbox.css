@@ -16,6 +16,8 @@
   border-radius: var(--radius-md);
   position: relative;
   appearance: none;
+  vertical-align: text-top;
+  margin-right: 0.5em;
   color: transparent;
   transition: all 0.1s ease;
 

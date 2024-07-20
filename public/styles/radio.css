@@ -15,8 +15,10 @@
   position: relative;
   width: 1.25em;
   height: 1.25em;
+  margin-right: 0.5em;
   border: solid 1px var(--radio-border);
   border-radius: 100%;
+  vertical-align: text-top;
   transition: all 0.2s ease;
   background-color: var(--radio-bg);
 
