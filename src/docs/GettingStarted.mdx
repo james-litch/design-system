@@ -6,8 +6,6 @@ import { Meta, Title, Markdown } from '@storybook/blocks';
 
 This is the documentation for the design system. It contains all the information you need to get started.
 
-
- 
 ## Figma
  
 [Scan.com Figma](https://www.figma.com/files/team/780605331611258662/all-projects?fuid=1177629003887292479) is a collaborative design and prototyping tool. It's the heart of the design process, allowing designers to work together seamlessly.
@@ -57,12 +55,13 @@ Optionally you can import the entire design system.
 ```css
 @import 'tailwindcss';
 
-# css layers help to ensure that your project specific styles take precedence over the design system styles.
-@import '@scandotcom/design-system/dist/index.css' layer(base);
+@import '@scandotcom/design-system/styles/index.css';
 
 # or
-@import '@scandotcom/design-system/dist/button.css';
+@import '@scandotcom/design-system/styles/button.css' layer(components);
 ....
-@import '@scandotcom/design-system/dist/typography.css';
+@import '@scandotcom/design-system/styles/fonts.css' layer(base);
+
+# css layers help to ensure that your project specific styles take precedence over the design system styles.
 ```
 
