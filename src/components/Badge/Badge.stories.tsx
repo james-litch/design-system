@@ -25,3 +25,11 @@ export const Warning: Story = {
 export const Danger: Story = {
   args: { ...Base.args, kind: "danger" },
 };
+
+export const Large: Story = {
+  args: { ...Base.args, kind: "danger", className: "text-fl-1" },
+};
+
+export const Small: Story = {
+  args: { ...Base.args, kind: "danger", className: "text-fl--1" },
+};

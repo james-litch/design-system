@@ -4,11 +4,12 @@
     --_text: var(--color-neutral-700);
     --_border: var(--color-neutral-300);
 
-    padding: 0.25em 0.5em;
+    padding: 0.125em 0.5em;
     border-radius: var(--radius-md);
     border: var(--_border) 1px solid;
     color: var(--_text);
     background-color: var(--_bg);
+    font-weight: 500;
 }
 
 .badge-warning {
