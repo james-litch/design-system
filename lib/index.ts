@@ -1,3 +1,4 @@
+export { Badge } from "./components/Badge";
 export { Button, ButtonLink } from "./components/Button";
 export { Checkbox } from "./components/Checkbox";
 export { Disclosure } from "./components/Disclosure";
@@ -8,5 +9,4 @@ export { Select } from "./components/Select";
 export { StaticMap } from "./components/StaticMap";
 export { Switch } from "./components/Switch";
 export { TextArea } from "./components/TextArea";
-
 export { classnames } from "./utils/classnames";
