@@ -13,7 +13,7 @@
         "lib/index.ts"
       ],
       "@scandotcom/design-system/icons": [
-        "lib/icons/icons.ts"
+        "lib/icons.ts"
       ],
     },
     "module": "ESNext",
