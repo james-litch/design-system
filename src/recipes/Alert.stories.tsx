@@ -1,6 +1,6 @@
 import { classnames } from "@scandotcom/design-system";
+import { IconAlertCircle } from "@scandotcom/design-system/icons";
 import type { Meta, StoryObj } from "@storybook/react";
-import { IconAlertCircle } from "dist/icons";
 
 type Props = {
   colors: string;
@@ -35,11 +35,11 @@ export const Default: Story = {
 };
 
 export const Error: Story = {
-    ...Default,
-    args: { colors: "text-danger-600 bg-danger-50" },
+  ...Default,
+  args: { colors: "text-danger-600 bg-danger-50" },
 };
 
 export const Warning: Story = {
-    ...Default,
-    args: { colors: "text-warning-900 bg-warning-50" },
+  ...Default,
+  args: { colors: "text-warning-900 bg-warning-50" },
 };
